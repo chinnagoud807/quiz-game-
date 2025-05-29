@@ -1,0 +1,39 @@
+# Simple Quiz Game
+
+score = 0  # To keep track of the score
+
+print("Welcome to the Quiz Game!")
+play = input("Do you want to play? (yes/no): ")
+
+if play.lower() != "yes":
+    print("Okay, maybe next time!")
+    quit()
+
+print("Great! Let's start the quiz.")
+
+# Question 1
+answer = input("1. What is the capital of France? ")
+if answer.lower() == "paris":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong! The correct answer is Paris.")
+
+# Question 2
+answer = input("2. What is 5 + 7? ")
+if answer == "12":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong! The correct answer is 12.")
+
+# Question 3
+answer = input("3. What programming language are we using? ")
+if answer.lower() == "python":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong! The correct answer is Python.")
+
+print(f"You got {score} out of 3 questions correct.")
+print("Thanks for playing!")
